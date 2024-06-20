@@ -5,5 +5,12 @@ export default defineNuxtConfig({
     buildAssetsDir: 'assets'
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss']
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
+
+  googleFonts: {
+    families: {
+      Bitter: true,
+      "Zilla Slab": true
+    }
+  }
 })
