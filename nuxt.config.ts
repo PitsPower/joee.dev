@@ -1,15 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: '/joee.dev/',
-    buildAssetsDir: 'assets'
+    baseURL: '',
+    buildAssetsDir: 'assets',
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
 
   googleFonts: {
     families: {
-      Bitter: true,
       "Zilla Slab": true
     }
   }
