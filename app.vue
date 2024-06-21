@@ -30,8 +30,9 @@
   transform: translateX(-10px);
 }
 
-body {
-  @apply text-2xl;
+h1 {
+  @apply text-4xl;
+  font-family: 'Zilla Slab';
 }
 
 .header {
@@ -42,41 +43,40 @@ body {
   }
 
   &.home {
-    @apply top-1/2;
+    @apply top-1/2 -translate-y-1/2 scale-[60%] md:scale-100;
 
     .title {
       transform: $perspective;
     }
 
     .links {
-      @apply mt-2 mr-36;
+      @apply mt-2 mr-16 md:scale-100;
 
       a {
-        @apply text-2xl mx-[10px];
+        @apply text-3xl md:text-2xl mx-[10px];
       }
     }
   }
 
-  @apply absolute top-[5%] left-1/2 -translate-x-1/2 -translate-y-1/2;
+  @apply absolute top-0 left-1/2 -translate-x-1/2;
   perspective: 500px;
 
   .title {
     @apply text-9xl font-bold bg-black text-white select-none
-      pl-1 pr-2 pb-3;
+      pl-1 pr-2 pb-3 scale-50;
     font-family: 'Zilla Slab';
-    transform: scale(0.5);
   }
 
   .links {
-    @apply mt-[-30px] text-center;
+    @apply mt-[-35px] text-center;
 
     a {
-      @apply text-lg underline mx-[15px];
+      @apply text-lg underline mx-2;
     }
   }
 }
 
 .content {
-  @apply mt-56 px-96;
+  @apply mt-48 px-8 md:px-40 xl:px-96;
 }
 </style>
