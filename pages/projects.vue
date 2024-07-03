@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 useSeoMeta({
   title: 'joee.dev - projects',
+  ogTitle: 'projects',
+  ogSiteName: 'joee.dev',
   ogImage: '/img/logo/256.png',
   ogDescription: 'Take a look at my projects!'
 })

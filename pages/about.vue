@@ -3,6 +3,8 @@ import ConfettiExplosion from 'vue-confetti-explosion'
 
 useSeoMeta({
   title: 'joee.dev - about',
+  ogTitle: 'about me',
+  ogSiteName: 'joee.dev',
   ogImage: '/img/logo/256.png',
   ogDescription: 'Hey! My name is Joseph Edwards.'
 })
