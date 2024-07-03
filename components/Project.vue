@@ -15,7 +15,7 @@ defineProps<{
     class="project"
     :class="{ [color]: true, white: whiteText, clicky: projectUrl !== undefined }"
   >
-    <NuxtImg :src="imageUrl" :alt="title" />
+    <img :src="imageUrl" :alt="title" />
     <div class="info">
       <h1>{{ title }}</h1>
       <p><slot /></p>
