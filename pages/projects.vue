@@ -45,7 +45,7 @@ const projects = [
     projectUrl: 'https://bonkleagues.io',
     imageUrl: '/img/bonkleagues.png',
     description: `
-      A collection of tools for a webgame called bonk.io, including an editor for
+      A collection of tools for the web game bonk.io, including an editor for
       in-game avatars, and a Chrome extension for the game.
     `
   },
@@ -53,7 +53,7 @@ const projects = [
 </script>
 
 <template>
-  <div>
+  <div class="pt-5 pb-52">
     <Project 
       v-for="project in projects"
       class="mb-10"
@@ -74,5 +74,7 @@ const projects = [
         {{ line }}
       </div>
     </Project>
+
+    <h1 class="text-center font-bold">to be continued...</h1>
   </div>
 </template>

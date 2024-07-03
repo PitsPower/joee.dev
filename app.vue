@@ -97,7 +97,7 @@ h1 {
 .content {
   @apply overflow-auto h-[calc(100vh-8rem)]
     mt-32 px-8
-    md:px-40 2xl:px-96;
+    md:px-40 2xl:px-80;
 
   h1 {
     margin-bottom: 30px;
