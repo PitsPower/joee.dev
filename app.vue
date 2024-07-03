@@ -6,7 +6,8 @@
     <div class="links">
       <NuxtLink to="/about">about</NuxtLink>
       <NuxtLink to="/projects">projects</NuxtLink>
-      <NuxtLink to="/contact">contact</NuxtLink>
+      <!-- <NuxtLink to="/contact">contact</NuxtLink> -->
+      <a href="mailto:contact@joee.dev" target="_blank">contact</a>
     </div>
   </nav>
 
@@ -20,6 +21,19 @@
   @apply bg-black text-white;
 }
 
+::-webkit-scrollbar {
+  @apply w-2.5;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-black rounded-full
+    border-white border-solid border-s-2;
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: all 0.15s;
@@ -30,6 +44,10 @@
   transform: translateX(-10px);
 }
 
+body {
+  @apply overflow-hidden;
+}
+
 h1 {
   @apply text-4xl;
   font-family: 'Zilla Slab';
@@ -37,6 +55,9 @@ h1 {
 
 .header {
   $perspective: rotateX(15deg) rotateY(5deg);
+
+  @apply absolute z-50 -top-3.5 left-1/2 -translate-x-1/2;
+  perspective: 500px;
 
   &, * {
     transition: all 0.4s;
@@ -58,9 +79,6 @@ h1 {
     }
   }
 
-  @apply absolute top-0 left-1/2 -translate-x-1/2;
-  perspective: 500px;
-
   .title {
     @apply text-9xl font-bold bg-black text-white select-none
       pl-1 pr-2 pb-3 scale-50;
@@ -71,12 +89,18 @@ h1 {
     @apply mt-[-35px] text-center;
 
     a {
-      @apply text-lg underline mx-2;
+      @apply select-none text-lg underline mx-2;
     }
   }
 }
 
 .content {
-  @apply mt-48 px-8 md:px-40 xl:px-96;
+  @apply overflow-auto h-[calc(100vh-8rem)]
+    mt-32 px-8
+    md:px-40 2xl:px-96;
+
+  h1 {
+    margin-bottom: 30px;
+  }
 }
 </style>

@@ -6,11 +6,22 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
+    '@vueuse/nuxt',
+    "@nuxt/image"
+  ],
 
   googleFonts: {
     families: {
       "Zilla Slab": true
+    }
+  },
+
+  router: {
+    options: {
+      linkActiveClass: 'font-bold',
     }
   }
 })
