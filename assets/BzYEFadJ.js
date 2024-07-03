@@ -1,0 +1,1 @@
+import{u as e}from"./CqLldxa6.js";import{d as o}from"./VANZdYBv.js";const s=o({__name:"index",setup(t){return e({title:"joee.dev",ogTitle:"joee.dev",ogSiteName:"joee.dev",ogImage:"/img/logo/256.png",ogDescription:"Home of Joseph Edwards, Computer Scientist. Come in!"}),(i,n)=>null}});export{s as default};
