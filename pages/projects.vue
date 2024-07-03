@@ -1,4 +1,10 @@
 <script lang="ts" setup>
+useSeoMeta({
+  title: 'joee.dev - projects',
+  ogImage: '/img/logo/256.png',
+  ogDescription: 'Take a look at my projects!'
+})
+
 const projects = [
   {
     name: 'Allchemy',

@@ -1,6 +1,12 @@
 <script lang="ts" setup>
 import ConfettiExplosion from 'vue-confetti-explosion'
 
+useSeoMeta({
+  title: 'joee.dev - about',
+  ogImage: '/img/logo/256.png',
+  ogDescription: 'Hey! My name is Joseph Edwards.'
+})
+
 const now = useTimestamp()
 
 const startTimestamp = 1455494400000
